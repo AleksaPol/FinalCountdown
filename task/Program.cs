@@ -5,15 +5,17 @@ Console.WriteLine($"Введите набор символов, означающ
 FillArray(arrayOne);
 // FillArrayRandomly(arrayOne); вариант заполнения массива рандомно
 Console.Clear();
-PrintArray(arrayOne);
+// PrintArray(arrayOne);
 Console.WriteLine();
 Console.WriteLine($"Новый массив, содержащий элементы, размер которых меньше либо равен {n}:");
 if (GetSizeOfSecondArray(arrayOne) == 0){Console.WriteLine("искомых элементов строкового масива для переноса в новый массив - нет");}
 else
 {   
     string[] arrayTwo = TransferElements(arrayOne);
-    PrintArray(arrayTwo);
+    // PrintArray(arrayTwo);
+    Console.WriteLine($"[{String.Join(", ", arrayOne)}] -> [{String.Join(", ", arrayTwo)}]");
 }
+
 
 void FillArrayRandomly(string[] arr)
 {
